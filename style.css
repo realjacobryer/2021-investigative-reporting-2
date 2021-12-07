@@ -21,7 +21,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 body,
 html {
   /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 1.5vw;
+    font-size: 16px;
     font-family: 'Lucida Sans Unicode',
     sans-serif;
     height: 100%;
@@ -118,8 +118,9 @@ figcaption {
 
 .images .image {
   position: absolute;
-  top: 10%;
-  left: 0;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -25%);  
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -144,41 +145,42 @@ figcaption {
 }
 
 .slide .container {
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.75);
   color: rgb(0, 0, 0);
   padding: 22px;
-  border-radius: 10px;
   position: absolute;
   top: 20%;
   right: 10%;
   width: 30%;
   height: auto;
+  font-size: 0.7em;
 }
 
 .header-image{
     margin-right:10%;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 .header-text {
     margin-left: 10%;
-    margin-top: 0.5%;
+    margin-top: 1%;
 }
 
 .header-text h1{
-    font-size: 8vw;
+    font-size: 2.5em;
 }
 
 .header-text h3 {
-    font-size: 2.5vw;
+    font-size: 1.25em;
 }
 
 .header-text p {
-    font-size: 1.5vw;
+    font-size: 1rem;
 }
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 /*********************************************************************
@@ -193,7 +195,33 @@ figcaption {
 
   .mobile {
     display: none;
+    }
+
+  body{
+    font-size:1.2em;
   }
+
+  .flex{
+    display:flex;
+    flex-wrap: nowrap;
+  }
+
+  .header-text h1 {
+  font-size: 7vw;
+  }
+
+  .header-text h3 {
+  font-size: 2vw;
+  }
+
+  .header-text p {
+  font-size: 1.5vw;
+  }
+
+  .slide .container {
+    font-size: 1.25vw;
+  }
+
 }
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE

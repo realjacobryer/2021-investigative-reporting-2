@@ -1,14 +1,9 @@
 const slides = document.querySelectorAll(".slide");
 
 slides.forEach((slide, idx) => {
-  let threshold = 0.3;
+  let threshold = 0.5;
   console.log("Index", idx);
   let prevSlide = slides.item([idx - 1]);
-
-  if (prevSlide && prevSlide.classList.contains("white")) {
-    console.log("Setting threshold to 0");
-    threshold = 0;
-  }
 
   if (prevSlide && slide.classList.contains("purple")) {
     console.log("Setting threshold to 0");
