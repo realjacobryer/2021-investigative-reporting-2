@@ -43,12 +43,20 @@ p {
   line-height: 1.2em;
 }
 
+h3 {
+      text-shadow:2px 2px #000000;
+}
+
+
 /** Caption styles */
 .caption,
 figcaption {
-  font-size: 0.9rem;
-  color: #8e8a8a;
+  font-size: 0.7rem;
+  color: #ffffff;
   padding: 5px 0;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 5px 5px #000000;
 }
 /** BASE CLASSES */
 /** Container styles to keep content from becoming too wide or coming too close to
@@ -156,31 +164,22 @@ figcaption {
   font-size: 0.7em;
 }
 
-.header-image{
-    margin-right:10%;
-    margin-top: 4%;
+.header-image {
+  background-image: url("images/540exterior1.JPG");
+  height: 750px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.header-text {
-    margin-left: 10%;
-    margin-top: 1%;
-}
-
-.header-text h1{
-    font-size: 2.5em;
-}
-
-.header-text h3 {
-    font-size: 1.25em;
-}
-
-.header-text p {
-    font-size: 1rem;
-}
-
-.flex{
-    display: flex;
-    flex-wrap: wrap;
+.header-text{
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow:4px 4px #000000;
 }
 
 /*********************************************************************
